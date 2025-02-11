@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <button type="button" id="sendOtpBtn">Send OTP</button>
+            </div>
+            <div class="form-group" id="otpSection" style="display: none;">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" placeholder="Enter OTP">
+            </div>
+            <div class="form-group">
+                <button type="submit" id="verifyOtpBtn" style="display: none;">Verify OTP</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="scripts.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
